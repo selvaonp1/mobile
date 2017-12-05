@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.Products">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="products"
+        android:id="@+id/button18"
+        android:layout_alignParentTop="true"
+        android:background="#01A3DA"
+        android:layout_marginTop="55dp"
+        android:drawableLeft="@drawable/resta"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button18">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:id="@+id/listView3"
+        android:dividerHeight="1dp"
+        android:divider="@color/listbg"
+        android:layout_below="@+id/button18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_weight="0.5"
+        android:dividerHeight="1dp"
+        android:divider="@color/listbg"
+        android:layout_below="@+id/button18"
+        android:layout_toRightOf="@+id/listView3"
+        android:layout_toEndOf="@+id/listView3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EmBasket"
+        android:id="@+id/textView34"
+        android:textColor="#01A3DA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="18dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/button53"
+            android:textColor="#fff"
+            android:background="@drawable/carti"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button18"
+            android:layout_alignEnd="@+id/button18" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

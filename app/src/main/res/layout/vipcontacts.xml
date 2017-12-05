@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.VIPContacts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Maintainance office"
+        android:id="@+id/button28"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/tool"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Office bearers"
+        android:id="@+id/button29"
+        android:layout_below="@+id/button28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/id"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/button28"
+        android:layout_alignEnd="@+id/button28" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Builders"
+        android:id="@+id/button30"
+        android:layout_below="@+id/button29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/builder"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/button29"
+        android:layout_alignEnd="@+id/button29" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Emergencies"
+        android:id="@+id/button31"
+        android:layout_below="@+id/button30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/siren"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/button30"
+        android:layout_alignEnd="@+id/button30" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="executive committee"
+        android:id="@+id/button32"
+        android:layout_below="@+id/button31"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/manager"
+        android:padding="10dp"
+        android:layout_toLeftOf="@+id/listView12"
+        android:layout_toStartOf="@+id/listView12" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView12"
+        android:layout_alignTop="@+id/button28"
+        android:layout_toRightOf="@+id/button28"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/button28" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView13"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/button29"
+        android:layout_toRightOf="@+id/button29"
+        android:layout_toEndOf="@+id/button29" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView14"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/button30"
+        android:layout_alignLeft="@+id/listView12"
+        android:layout_alignStart="@+id/listView12" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView15"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/button31"
+        android:layout_toRightOf="@+id/button31"
+        android:layout_toEndOf="@+id/button31" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView16"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/button32"
+        android:layout_toRightOf="@+id/button32"
+        android:layout_toEndOf="@+id/button32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EmBassador"
+            android:textColor="#fff"
+            android:id="@+id/textView96"
+            android:layout_above="@+id/listView12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="#01A3DA"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/others"
+            android:padding="10dp"
+            android:text="others"
+            android:id="@+id/button57"
+            android:layout_below="@+id/button32"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/listView12"
+            android:layout_toStartOf="@+id/listView12" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView28"
+            android:layout_alignTop="@+id/button57"
+            android:layout_alignLeft="@+id/listView12"
+            android:layout_alignStart="@+id/listView12" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

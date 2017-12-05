@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.location.sunday1.society">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cityscape"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".Home" />
+        <activity android:name=".Home1" />
+        <activity android:name=".Services" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".Products" />
+        <activity android:name=".Events" />
+        <activity android:name=".Queries" />
+        <activity android:name=".VIPContacts" />
+        <activity android:name=".SubProducts" />
+        <activity android:name=".ServicesDetails" />
+        <activity android:name=".ServicePersonList" />
+        <activity android:name=".AdminHomePage" />
+        <activity android:name=".SubServices" />
+        <activity android:name=".ServiceList" />
+        <activity android:name=".ShowVipContacts" />
+        <activity android:name=".CartDetails" />
+        <activity android:name=".ShowQueries" />
+        <activity android:name=".Anyideas" />
+        <activity android:name=".ViewIdeas" />
+        <activity android:name=".AddItems" />
+        <activity android:name=".Embuddy" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddVipContact" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".UpdateCart" />
+        <activity android:name=".AddEmbizz" />
+        <activity android:name=".AddEmbevents" />
+        <activity android:name=".Disclaimer" />
+        <activity android:name=".Aboutus" />
+        <activity android:name=".Contact" />
+        <activity android:name=".Embizzuser" />
+        <activity android:name=".ShowEvents" />
+        <activity android:name=".UpdateItems" />
+        <activity android:name=".UpdateEmBuddy" />
+        <activity android:name=".UpdateEmBasket" />
+        <activity android:name=".UpdateEmBassador" />
+        <activity android:name=".EmBasketList" />
+        <activity android:name=".EmBassadorList" />
+        <activity android:name=".EmBuddyList" />
+        <activity android:name=".EmBizzList" />
+        <activity android:name=".UpdateEmBizz" />
+        <activity android:name=".EmBeventsList" />
+        <activity android:name=".UpdateEmBevents" />
+        <activity android:name=".EmBizzNew" />
+        <activity android:name=".ProductsTest"></activity>
+    </application>
+
+</manifest>

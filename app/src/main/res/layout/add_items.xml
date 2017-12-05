@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.AddItems">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:text="add  embuddy"
+        android:id="@+id/button40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:text="add Embasket"
+        android:id="@+id/button41"
+        android:layout_below="@+id/button40"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:layout_alignRight="@+id/button40"
+        android:layout_alignEnd="@+id/button40" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:text="add embassador"
+        android:id="@+id/button42"
+        android:layout_below="@+id/button41"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:layout_alignRight="@+id/button41"
+        android:layout_alignEnd="@+id/button41" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:text="add embizz"
+        android:id="@+id/button43"
+        android:layout_below="@+id/button42"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:layout_alignRight="@+id/button42"
+        android:layout_alignEnd="@+id/button42" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:text="add embevents"
+        android:id="@+id/button44"
+        android:layout_below="@+id/button43"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp"
+        android:layout_alignRight="@+id/button43"
+        android:layout_alignEnd="@+id/button43" />
+</RelativeLayout>
+</RelativeLayout>

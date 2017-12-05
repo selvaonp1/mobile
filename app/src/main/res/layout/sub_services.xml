@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.SubServices">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4000"
+        android:alpha="1.2"
+        >
+             <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                 android:layout_marginTop="50dp"
+               >
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8000"
+            android:padding="20dp"
+            android:id="@+id/tableLayout"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Name "
+                    android:textColor="#fff"
+                    android:id="@+id/textView36"
+                    android:layout_column="0" />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                   />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView43"
+                    android:textColor="#fff"
+                    android:layout_column="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="MobileNo "
+                    android:id="@+id/textView40"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0" />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView44"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:layout_column="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Landline "
+                    android:textColor="#fff"
+                    android:id="@+id/textView41"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0" />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView45"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:layout_column="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Address "
+                    android:id="@+id/textView42"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0" />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView46"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rating :"
+                    android:id="@+id/textView47"
+    android:visibility="gone"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView48"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:layout_column="3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Your Rating :"
+                    android:id="@+id/textView49"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="0" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:id="@+id/ratingBar"
+                    android:stepSize="1"
+    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="3" />
+            </TableRow>
+        </TableLayout>
+            </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EmBuddy / "
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:id="@+id/textView91"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text "
+            android:id="@+id/textView92"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView91"
+            android:layout_toEndOf="@+id/textView91" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView100"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView92"
+            android:layout_toEndOf="@+id/textView92" />
+
+</RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"
+        android:id="@+id/button20"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:textColor="#01A3DA"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="userrating"
+        android:id="@+id/textView51"
+        android:visibility="gone"
+
+        android:layout_alignLeft="@+id/button20"
+        android:layout_alignStart="@+id/button20" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:text="EmBizz is to list the products or services offered by Embassy Residents. If interested to list your products or services, please type your query and click &quot;Submit&quot; button in next page."/>
+        <requestFocus />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="proceed"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>

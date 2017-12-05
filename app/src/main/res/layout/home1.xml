@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.Home1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4000"
+        android:alpha="1.2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disclaimer"
+            android:id="@+id/button50"
+            android:background="#01A3DA"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About App"
+            android:id="@+id/button51"
+            android:background="#01A3DA"
+            android:textColor="#fff"
+            android:layout_alignTop="@+id/button50"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact"
+            android:id="@+id/button52"
+            android:background="#01A3DA"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EmBuddy"
+                        android:id="@+id/button6"
+                        android:textAllCaps="false"
+                        android:background="#01A3DA"
+                        android:drawableTop="@drawable/settings"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EmBizz"
+                        android:textSize="20dp"
+                        android:id="@+id/button9"
+                        android:background="#01A3DA"
+                        android:drawableTop="@drawable/hand"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="20dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp"/>
+        </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EmBasket"
+                android:id="@+id/button7"
+                android:background="#01A3DA"
+                android:drawableTop="@drawable/full"
+                android:textColor="#fff"
+                android:padding="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="15dp">
+
+            <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EmBassador"
+                        android:id="@+id/button10"
+                        android:background="#01A3DA"
+                        android:drawableTop="@drawable/iconss"
+                        android:textColor="#fff"
+                android:textAllCaps="false"
+                android:paddingLeft="6dp"
+                android:paddingRight="7dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                android:textSize="20dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EmBevents"
+                        android:id="@+id/button11"
+                        android:background="#01A3DA"
+                        android:drawableTop="@drawable/eventsss"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_column="2"
+                        android:textAllCaps="false"
+                        android:paddingLeft="13dp"
+                        android:paddingRight="13dp"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp"
+                        android:textSize="20dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

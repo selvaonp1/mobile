@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.AdminHomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="add  new items"
+        android:id="@+id/button33"
+        android:layout_marginTop="57dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/basket"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="View ideas"
+        android:id="@+id/button34"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/working"
+        android:padding="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/button33"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Update items"
+        android:id="@+id/button54"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+            android:drawableLeft="@drawable/arrows"
+            android:padding="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/button34"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button34"
+            android:layout_alignEnd="@+id/button34" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

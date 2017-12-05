@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.EmBizzNew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+
+
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText35"
+                    android:textStyle="italic"
+                    android:textColorHint="#fff"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_column="0"
+                    android:hint="Type here..."
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/button60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="submit"
+                    android:id="@+id/button60"
+                    android:background="#fff"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#01A3DA"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_column="10"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="EmBizz"
+            android:id="@+id/button61"
+            android:background="#fff"
+            android:textSize="20dp"
+            android:textColor="#01A3DA"
+            android:textAllCaps="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView31"
+            android:background="#01A3DA"
+            android:divider="#fff"
+            android:dividerHeight="1dp"
+
+
+            android:layout_toRightOf="@+id/button61"
+            android:layout_toEndOf="@+id/button61" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

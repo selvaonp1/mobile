@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.ShowVipContacts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#6000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Category "
+                android:id="@+id/textView53"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView59"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name "
+                android:id="@+id/textView54"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView60"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Designation "
+                android:textColor="#fff"
+                android:id="@+id/textView55"
+                android:layout_column="0" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView61"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="MobileNo "
+                android:textColor="#fff"
+                android:id="@+id/textView56"
+                android:layout_column="0" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView62"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Landline "
+                android:textColor="#fff"
+                android:id="@+id/textView57"
+                android:layout_column="0" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView63"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Emailid "
+                android:id="@+id/textView58"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView64"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Address "
+                android:id="@+id/textView65"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" : "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView66"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+    </TableLayout>
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EmBassador / "
+            android:textColor="#fff"
+            android:id="@+id/textView97"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text /"
+            android:textColor="#fff"
+            android:id="@+id/textView98"
+            android:textSize="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView97"
+            android:layout_toEndOf="@+id/textView97" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:id="@+id/textView99"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView98"
+            android:layout_toEndOf="@+id/textView98" />
+
+    </RelativeLayout>
+</RelativeLayout>

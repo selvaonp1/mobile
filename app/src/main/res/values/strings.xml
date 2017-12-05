@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">EmBeasy</string>
+
+    <string-array name="EmBuddy">
+        <item>Electronic Fixes</item>
+        <item>Hosuehold needs</item>
+        <item>automobiles</item>
+        <item>Household fixes</item>
+        <item>Medical</item>
+        <item>Sports</item>
+        <item>Transport</item>
+        <item>others</item>
+
+
+    </string-array>
+
+    <string-array name="EmBizz">
+        <item>ECA</item>
+        <item>Food</item>
+        <item>Hosuehold needs</item>
+        <item>Lifestyle</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="EmBasket">
+        <item>food</item>
+    </string-array>
+
+    <string-array name="EmBassador">
+        <item>Maintainance office</item>
+        <item>Office Bearers</item>
+        <item>Builder</item>
+        <item>Emergencies</item>
+        <item>Executive Committee</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="products">
+        <item>breakfast</item>
+        <item>lunch</item>
+        <item>dinner</item>
+        <item>briyani</item>
+        <item>nuts and dryfruit</item>
+        <item>organic veg and fruits</item>
+        <item>oils</item>
+        <item>groceries</item>
+        <item>snacks</item>
+        <item>milks</item>
+
+    </string-array>
+
+    <string-array name="gms">
+        <item>50gms</item>
+        <item>100gms</item>
+        <item>250gms</item>
+        <item>500gms</item>
+        <item>1kg</item>
+    </string-array>
+
+    <string-array name="events">
+        <item>this_month</item>
+        <item>upcoming</item>
+        <item>previous</item>
+        <item>others</item>
+
+    </string-array>
+
+
+</resources>

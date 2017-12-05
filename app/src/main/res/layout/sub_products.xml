@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.SubProducts">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8000"
+            android:alpha="1.2"
+            ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#01A3DA"
+        android:id="@+id/tableLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Item"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="0" /> 
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Unit"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Quantity"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Price"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView9"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="50gm"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/textView15"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:id="@+id/editText15"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:layout_column="2" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textView19"
+                android:padding="10dp"
+                    android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView10"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="100gm"
+                android:id="@+id/textView16"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/editText16"
+                android:visibility="invisible"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textView20"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView11"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="250gm"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:id="@+id/textView17"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:id="@+id/editText17"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textView21"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView14"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="500gm"
+                android:padding="10dp"
+                android:id="@+id/textView18"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:padding="10dp"
+                android:id="@+id/editText18"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textView22"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView23"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="1kg"
+                android:padding="10dp"
+                android:id="@+id/textView24"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:padding="10dp"
+                android:id="@+id/editText19"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:id="@+id/textView25"
+                android:padding="10dp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:layout_column="3" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EmBasket /"
+        android:id="@+id/textView35"
+        android:textColor="#01A3DA"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" products / "
+        android:textColor="#01A3DA"
+        android:textSize="12dp"
+        android:id="@+id/textView37"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView35"
+        android:layout_toEndOf="@+id/textView35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text / "
+        android:textSize="12dp"
+        android:id="@+id/textView38"
+        android:textColor="#01A3DA"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView37"
+        android:layout_toEndOf="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:textSize="12dp"
+        android:id="@+id/textView39"
+        android:textColor="#01A3DA"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView38"
+        android:layout_toEndOf="@+id/textView38" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        android:id="@+id/button21"
+        android:background="@drawable/border"
+        android:textColor="#01A3DA"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add to cart"
+        android:id="@+id/button22"
+        android:background="@drawable/border"
+        android:textColor="#01A3DA"
+        android:padding="20dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView52"
+        android:layout_alignRight="@+id/tableLayout2"
+        android:layout_alignEnd="@+id/tableLayout2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TOTAL AMT : 0"
+        android:id="@+id/textView52"
+        android:background="@drawable/border"
+        android:textColor="#01A3DA"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/button21"
+        android:layout_alignRight="@+id/button22"
+        android:layout_alignEnd="@+id/button22"
+        android:layout_alignLeft="@+id/tableLayout2"
+        android:layout_alignStart="@+id/tableLayout2" />
+
+
+</RelativeLayout>
+</RelativeLayout>

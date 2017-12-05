@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="left"
+
+        android:text="Thank you for your interest in listing your products or services here. Our Admin will contact you shortly regarding this."/>
+        <requestFocus />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="*You need to have any email app installed in your device to send email"
+        android:id="@+id/textView89"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

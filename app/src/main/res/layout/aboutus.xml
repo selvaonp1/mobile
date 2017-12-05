@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#8000"
+    tools:context="com.location.sunday1.society.Disclaimer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="About EmBeasy App:"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:id="@+id/textView85"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="When Embassy residents looked out for a particular contact of any services (ex: AC mechanic, Tyre Puncture repair, Electrician or Newspaper agencies) they normally place their queries in whatsapp group or common floor or sms. Most of the residents will respond to such queries and provide the contacts. Within few weeks a similar query will be placed and someone will answer. To avoid this repeated queries and answers for similar services, we grouped all the service contacts collected from whatapp or common floor or sms and organized as category based. This data is placed now in EmBeasy App for ready reference and allowed the residents to go through such contacts instead of searching in their messages. These external contacts are now placed here as EmBuddy.
+EmBeasy also gives the services/business offerings by the residents and grouped into EmBizz. Important contacts like maintenance office, office bearers and emergencies can be viewed in EmBassador. Few food products are placed in EmBasket for our residents which will be delivered at their doorstep with an agreed timeline. EmBevents show case the list of events happening in Embassy residency."
+        android:id="@+id/textView86"
+        android:layout_below="@+id/textView85"
+        android:textColor="#fff"
+        android:textSize="16dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</RelativeLayout>
+</ScrollView>

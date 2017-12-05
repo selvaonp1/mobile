@@ -1,0 +1,112 @@
+{
+   "embeasy":{
+      "products":[
+         {
+            "category":"food",
+            "product":"Nuts & Dry Fruits",
+            "subproduct":"Badam",
+            "unit":"100",
+            "unitname":"gm",
+            "price":"25",
+            "image":"no"
+         },
+         {
+            "category":"food",
+            "product":"Nuts & Dry fruits",
+            "subproduct":"Badam",
+            "unit":"250",
+            "unitname":"gm",
+            "price":"35",
+            "image":"no"
+         }
+      ],
+      "services":[
+         {
+            "category":"automobiles",
+            "service":"bikeservice",
+            "serviceprovidername":"AB bike Zone",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no",
+            "image":"no",
+            "rating":"4"
+         },
+         {
+            "category":"Electronic Fixes",
+            "service":"AC mechanic",
+            "serviceprovidername":"BB AC Zone",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no",
+            "image":"no",
+            "rating":"1"
+         }
+      ],
+      "rating":[
+         {
+            "service":"AC mechanic",
+            "providername":"BB AC Zone",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no",
+            "rating":"4"
+         },
+         {
+            "service":"automobiles",
+            "providername":"AB bike Zone",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no",
+            "rating":"1"
+         }
+      ],
+      "vipcontacts":[
+         {
+            "category":"Maintainance office",
+            "name":"Francis",
+            "designation":"Property Manager",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "emailid":"no",
+            "address":"no"
+         },
+         {
+            "category":"Maintainance office2",
+            "name":"Francis2",
+            "designation":"Property Manager2",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "emailid":"no",
+            "address":"no"
+         }
+      ],
+      "events":[
+         {
+            "event_name":"pongal",
+            "time":"upcoming"
+         },
+         {
+            "event_name":"Diwali",
+            "time":"upcoming"
+         }
+      ],
+      "queries":[
+         {
+            "category":"Lifestyle",
+            "service":"Nuts & Dry Fruits",
+            "service_provider_name":"Badam",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no"
+         },
+         {
+            "category":"Lifestyle",
+            "service":"Nuts & Dry Fruits",
+            "service_provider_name":"Badam",
+            "mobileno":"9677086686",
+            "landline":"null",
+            "address":"no"
+         }
+      ]
+   }
+}

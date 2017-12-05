@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/llp"
+    tools:context="com.location.sunday1.society.Services">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8000"
+        android:alpha="1.2"
+        ></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Electronic fixes"
+        android:id="@+id/button12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_alignParentStart="true"
+
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/pc"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="household fixes"
+        android:id="@+id/button13"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_below="@+id/button12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:padding="10dp"
+        android:drawableLeft="@drawable/wash"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="household needs"
+        android:id="@+id/button14"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/button13"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/fridge"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/listView4"
+        android:layout_toStartOf="@+id/listView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="automobiles"
+        android:id="@+id/button15"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/button14"
+
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/repair"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button14"
+        android:layout_alignEnd="@+id/button14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="medical"
+        android:id="@+id/button16"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/button15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:padding="10dp"
+        android:drawableLeft="@drawable/add"
+        android:layout_alignRight="@+id/button15"
+        android:layout_alignEnd="@+id/button15" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView4"
+        android:layout_alignTop="@+id/button12"
+        android:layout_toRightOf="@+id/button13"
+        android:layout_toEndOf="@+id/button13"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="sports"
+        android:id="@+id/button8"
+        android:layout_marginTop="15dp"
+        android:background="#01A3DA"
+        android:textColor="#fff"
+        android:layout_below="@+id/button16"
+        android:layout_alignRight="@+id/button16"
+        android:layout_alignEnd="@+id/button16"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/trophy"
+        android:padding="10dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="transports"
+        android:id="@+id/button19"
+        android:layout_below="@+id/button8"
+        android:layout_marginTop="15dp"
+        android:background="#01A3DA"
+        android:drawableLeft="@drawable/airtransport"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_alignLeft="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:layout_alignRight="@+id/button13"
+        android:layout_alignEnd="@+id/button13" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView5"
+        android:layout_alignTop="@+id/button13"
+        android:layout_toRightOf="@+id/button14"
+        android:layout_toEndOf="@+id/button14" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView6"
+        android:layout_alignTop="@+id/button14"
+        android:layout_alignLeft="@+id/listView5"
+        android:layout_alignStart="@+id/listView5" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView7"
+        android:layout_alignTop="@+id/button15"
+        android:layout_alignLeft="@+id/listView5"
+        android:layout_alignStart="@+id/listView5" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView8"
+        android:layout_alignTop="@+id/button16"
+        android:layout_toRightOf="@+id/button16"
+        android:layout_toEndOf="@+id/button16" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView9"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignLeft="@+id/listView5"
+        android:layout_alignStart="@+id/listView5" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView10"
+        android:layout_alignTop="@+id/button19"
+        android:layout_alignLeft="@+id/listView4"
+        android:layout_alignStart="@+id/listView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EmBuddy "
+            android:textColor="#fff"
+            android:id="@+id/textView90"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Others"
+            android:id="@+id/button56"
+            android:layout_marginTop="15dp"
+            android:background="#01A3DA"
+            android:drawableLeft="@drawable/others"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/button19"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button19"
+            android:layout_alignEnd="@+id/button19" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView27"
+            android:layout_alignBottom="@+id/button56"
+            android:layout_toRightOf="@+id/button56"
+            android:layout_toEndOf="@+id/button56" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
