@@ -11,15 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.regex.Pattern;
 
@@ -30,26 +21,7 @@ public class Login extends AppCompatActivity {
 
     SQLiteHelper sq;
     SharedPreferences prefs = null;
-    String url = "http://18.220.229.249:8090/struct.json";
 
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
-    }
-
-    @Override
-    protected void onStop() {
-       super.onStop();
-        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,25 +35,7 @@ public class Login extends AppCompatActivity {
         e2 = (EditText)findViewById(R.id.editText12);
         b1 = (Button)findViewById(R.id.button2);
 
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        processResponseJson(response);
-
-                    }
-                }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
-                        System.out.println(error.getCause());
-                        error.printStackTrace();
-
-                    }
-                });
-        MySingleton.getInstance(getApplicationContext()).addToRequestQueue(jsObjRequest);
 
         ////////////////////////////
         try {
@@ -840,114 +794,6 @@ public class Login extends AppCompatActivity {
         sq.insertQueries("Lifestyle","Saree selling (Emb)","null","null","null","null");
         sq.insertQueries("Lifestyle","Vedhanthika health(emb)","null","null","null","null");
         */
-    }
-
-    private void insertIntoProducts(JSONArray products) throws JSONException {
-
-        for (int i = 0, size = products.length(); i < size; i++) {
-            JSONObject objectInArray = products.getJSONObject(i);
-            //(String category, String product, String subproduct, String unit,String unitname, String price, String image)
-            sq.insertProducts( objectInArray.getString("category"),
-                    objectInArray.getString("product"),
-                    objectInArray.getString("subproduct"),
-                    objectInArray.getString("unit"),
-                    objectInArray.getString("unitname"),
-                    objectInArray.getString("price"),
-                    objectInArray.getString("image")
-                    );
-        }
-    }
-
-    private void insertIntoServices(JSONArray services) throws JSONException {
-        for (int i = 0, size = services.length(); i < size; i++) {
-            JSONObject objectInArray = services.getJSONObject(i);
-            //(String category, String service, String serviceprovidername, String mobileno,String landline, String address, String image,String rating) {
-            sq.insertServices(objectInArray.getString("category"),
-                    objectInArray.getString("service"),
-                    objectInArray.getString("serviceprovidername"),
-                    objectInArray.getString("mobileno"),
-                    objectInArray.getString("landline"),
-                    objectInArray.getString("address"),
-                    objectInArray.getString("image"),
-                    objectInArray.getString("rating")
-            );
-        }
-    }
-
-    private void insertIntoRating(JSONArray rating) throws JSONException {
-        for (int i = 0, size = rating.length(); i < size; i++) {
-            JSONObject objectInArray = rating.getJSONObject(i);
-            //(String service,String providername, String mobileno, String landline, String address,String rating )
-            sq.insertRating(objectInArray.getString("service"),
-                    objectInArray.getString("providername"),
-                    objectInArray.getString("mobileno"),
-                    objectInArray.getString("landline"),
-                    objectInArray.getString("address"),
-                    objectInArray.getString("rating")
-            );
-        }
-    }
-
-    private void insertIntoVipcontacts(JSONArray vipContacts) throws JSONException {
-        for (int i = 0, size = vipContacts.length(); i < size; i++) {
-            JSONObject objectInArray = vipContacts.getJSONObject(i);
-            //(String category,String name, String designation, String mobileno, String landline,String emailid,String address)
-            sq.insertVipcontacts(objectInArray.getString("category"),
-                    objectInArray.getString("name"),
-                    objectInArray.getString("designation"),
-                    objectInArray.getString("mobileno"),
-                    objectInArray.getString("landline"),
-                    objectInArray.getString("emailid"),
-                    objectInArray.getString("address")
-                    );
-        }
-    }
-
-    private void insertIntoEvents(JSONArray events) throws JSONException {
-        for (int i = 0, size = events.length(); i < size; i++) {
-            JSONObject objectInArray = events.getJSONObject(i);
-            sq.insertEvents(objectInArray.getString("event_name"),
-                    objectInArray.getString("time")
-            );
-        }
-    }
-
-    private void insertIntoQueries(JSONArray queries) throws JSONException {
-        for (int i = 0, size = queries.length(); i < size; i++) {
-            JSONObject objectInArray = queries.getJSONObject(i);
-            //(String category,String service, String service_provider_name, String mobileno, String landline,String address)
-            sq.insertQueries(objectInArray.getString("category"),
-                    objectInArray.getString("service"),
-                    objectInArray.getString("service_provider_name"),
-                    objectInArray.getString("mobileno"),
-                    objectInArray.getString("landline"),
-                    objectInArray.getString("address")
-            );
-        }
-    }
-
-    private void processResponseJson(JSONObject response) {
-        try {
-            response = response.getJSONObject("embeasy");
-            JSONArray prodArray = response.getJSONArray("products");
-            JSONArray servicesArray = response.getJSONArray("services");
-            JSONArray ratingArray = response.getJSONArray("rating");
-            JSONArray vipContactsArray = response.getJSONArray("vipcontacts");
-            JSONArray eventsArray = response.getJSONArray("events");
-            JSONArray queriesArray = response.getJSONArray("queries");
-            if(response != null && prodArray.length() > 0) {
-                sq.clearMasterData();
-                insertIntoProducts(prodArray);
-                insertIntoServices(servicesArray);
-                insertIntoRating(ratingArray);
-                insertIntoVipcontacts(vipContactsArray);
-                insertIntoEvents(eventsArray);
-                insertIntoQueries(queriesArray);
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 
