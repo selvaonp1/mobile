@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.login);
 
         prefs = getSharedPreferences("com.mycompany.myAppName", MODE_PRIVATE);
-        MySingleton.getInstance(this).addToRequestQueue(jsObjRequest);
+        //MySingleton.getInstance(this).addToRequestQueue(jsObjRequest);
 
         sq=new SQLiteHelper(this);
 
@@ -551,9 +551,9 @@ public class Login extends AppCompatActivity {
         sq.items("Sub-collector","Emergencies");
         sq.items("Disaster Management","Emergencies");
 
-*/
 
-        processResponseJson(null);
+
+
 
         sq.insertProducts("food","Nuts & Dry Fruits","Badam","100", "gm","25","no");
         sq.insertProducts("food","Nuts & Dry Fruits","Badam","250","gm","35","no");
@@ -808,6 +808,7 @@ public class Login extends AppCompatActivity {
         sq.insertQueries("Lifestyle","Navra beads(Emb)","null","null","null","null");
         sq.insertQueries("Lifestyle","Saree selling (Emb)","null","null","null","null");
         sq.insertQueries("Lifestyle","Vedhanthika health(emb)","null","null","null","null");
+        */
     }
 
     private void insertIntoProducts(JSONArray products) throws JSONException {
@@ -896,6 +897,7 @@ public class Login extends AppCompatActivity {
 
     private void processResponseJson(JSONObject response) {
         try {
+            response = response.getJSONObject("embeasy");
             JSONArray prodArray = response.getJSONArray("products");
             JSONArray servicesArray = response.getJSONArray("services");
             JSONArray ratingArray = response.getJSONArray("rating");
@@ -917,21 +919,21 @@ public class Login extends AppCompatActivity {
         }
     }
 
-    JsonObjectRequest jsObjRequest = new JsonObjectRequest
-            (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-
-                @Override
-                public void onResponse(JSONObject response) {
-                    processResponseJson(response);
-
-                }
-            }, new Response.ErrorListener() {
-
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    // TODO Auto-generated method stub
-
-                }
-            });
+//    JsonObjectRequest jsObjRequest = new JsonObjectRequest
+//            (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+//
+//                @Override
+//                public void onResponse(JSONObject response) {
+//                    processResponseJson(response);
+//
+//                }
+//            }, new Response.ErrorListener() {
+//
+//                @Override
+//                public void onErrorResponse(VolleyError error) {
+//                    // TODO Auto-generated method stub
+//
+//                }
+//            });
 
 }
