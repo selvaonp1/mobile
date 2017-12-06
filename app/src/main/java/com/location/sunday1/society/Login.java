@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -29,12 +30,26 @@ public class Login extends AppCompatActivity {
 
     SQLiteHelper sq;
     SharedPreferences prefs = null;
-
-    String url = "http://my-json-feed";
-
+    String url = "http://18.220.229.249:8090/struct.json";
 
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
+    }
 
+    @Override
+    protected void onStop() {
+       super.onStop();
+        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MySingleton.getInstance(getApplicationContext()).getRequestQueue().stop();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +57,31 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.login);
 
         prefs = getSharedPreferences("com.mycompany.myAppName", MODE_PRIVATE);
-        //MySingleton.getInstance(this).addToRequestQueue(jsObjRequest);
-
         sq=new SQLiteHelper(this);
 
         e1 = (EditText)findViewById(R.id.editText11);
         e2 = (EditText)findViewById(R.id.editText12);
         b1 = (Button)findViewById(R.id.button2);
 
+        JsonObjectRequest jsObjRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        processResponseJson(response);
+
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO Auto-generated method stub
+                        System.out.println(error.getCause());
+                        error.printStackTrace();
+
+                    }
+                });
+        MySingleton.getInstance(getApplicationContext()).addToRequestQueue(jsObjRequest);
 
         ////////////////////////////
         try {
@@ -167,7 +198,7 @@ public class Login extends AppCompatActivity {
                     "   }\n" +
                     "} ";
 
-            processResponseJson(new JSONObject(jsonInput));
+           // processResponseJson(new JSONObject(jsonInput));
 
         } catch(Exception e) {
             e.printStackTrace();
@@ -919,21 +950,5 @@ public class Login extends AppCompatActivity {
         }
     }
 
-//    JsonObjectRequest jsObjRequest = new JsonObjectRequest
-//            (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-//
-//                @Override
-//                public void onResponse(JSONObject response) {
-//                    processResponseJson(response);
-//
-//                }
-//            }, new Response.ErrorListener() {
-//
-//                @Override
-//                public void onErrorResponse(VolleyError error) {
-//                    // TODO Auto-generated method stub
-//
-//                }
-//            });
 
 }
